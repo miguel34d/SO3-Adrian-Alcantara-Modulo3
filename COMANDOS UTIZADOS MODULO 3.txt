@@ -1,0 +1,64 @@
+Comandos usados práctica 1
+============================================
+
+🔧 CONFIGURACIÓN GRUB Y RECUPERACIÓN
+
+sudo nano /etc/default/grub
+GRUB_TIMEOUT=20
+sudo update-grub
+sudo reboot
+
+🔓 RECUPERAR CONTRASEÑA ROOT
+rw init=/bin/bash
+passwd root
+miguel
+reboot -r
+su
+
+Comandos usados práctica 2
+============================================
+
+📁 SCRIPTS DE ADMINISTRACIÓN
+
+# Script de Backup
+nano backup.sh
+sudo chmod +x backup.sh
+cd
+ls
+./backup.sh
+
+# Script de Red
+nano ifconfig.sh
+sudo chmod +x ifconfig.sh
+./ifconfig.sh
+
+Comandos usados práctica 3
+============================================
+
+🖥️  CONFIGURACIÓN SSH - VM LINUX
+
+ifconfig
+sudo apt install openssh-client openssh-server
+sudo systemctl status ssh
+sudo systemctl enable ssh
+sudo systemctl status ssh
+whoami
+
+💻 CONFIGURACIÓN SSH - WINDOWS HOST
+
+ipconfig
+ping 192.168.16.132
+ssh miguel@192.168.16.132
+whoami
+exit
+
+🔑 CONFIGURACIÓN CLAVES SSH
+
+ssh-keygen
+cat C:\Users\HP\.ssh\id_ed25519.pub
+ssh miguel@192.168.16.132
+cd .ssh/
+ls
+sudo nano authorized_keys
+exit
+ssh miguel@192.168.16.132
