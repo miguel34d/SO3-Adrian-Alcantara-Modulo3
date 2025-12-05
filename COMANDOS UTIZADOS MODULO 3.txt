@@ -10,11 +10,12 @@ sudo reboot
 
 🔓 RECUPERAR CONTRASEÑA ROOT
 rw init=/bin/bash
+ctrl-X 
 passwd root
 miguel
-reboot -r
+reboot -f
 su
-
+===========================================
 Comandos usados práctica 2
 ============================================
 
@@ -31,7 +32,7 @@ ls
 nano ifconfig.sh
 sudo chmod +x ifconfig.sh
 ./ifconfig.sh
-
+===========================================
 Comandos usados práctica 3
 ============================================
 
@@ -61,4 +62,5 @@ cd .ssh/
 ls
 sudo nano authorized_keys
 exit
+
 ssh miguel@192.168.16.132
